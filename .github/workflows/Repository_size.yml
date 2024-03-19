@@ -1,0 +1,12 @@
+name: repo_size
+run-name: size_repo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        whith:
+            sparse-checkout
+      - run: echo
+      - run: -skh --exclude=".git" s
