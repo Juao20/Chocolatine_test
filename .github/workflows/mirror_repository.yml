@@ -1,0 +1,8 @@
+name: Time_of_push
+run-name: Push time
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
